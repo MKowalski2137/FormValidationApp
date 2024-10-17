@@ -5,17 +5,51 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-
-    <TextView
-        android:id="@+id/textViewCount"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/editTextname"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Licznik: 0"
-        android:textSize="24sp"/>
+        android:hint="Imię"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/editTextSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nazwisko"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adres e-mail"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/editPhonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numer telefonu:"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hasło"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/editCheckPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Powtórz hasło"
+        android:inputType="textPassword"/>
 
     <Button
-        android:id="@+id/buttonIncrement"
+        android:id="@+id/buttonSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Zwiększ"/>
+        android:text="Wyślij"/>
 </LinearLayout>
